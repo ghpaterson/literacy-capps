@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import letsSpell from "../../public/letsspell.svg";
+import NavBar from "../../components/navbar.js";
 
 export default function Three() {
   const [vowel, setVowel] = useState(null);
@@ -64,10 +65,17 @@ export default function Three() {
     setLastLetter(newLastLetter);
   };
 
+  const handleResetClick = () => {
+    setVowel(null);
+    setFirstLetter(null);
+    setLastLetter(null);
+  };
+
   return (
     <>
       <main>
-        <div className="my-32">
+        <NavBar />
+        <div className="mt-28">
           <div className="flex justify-center">
             <Image src={letsSpell} width={400} />
           </div>
@@ -91,6 +99,14 @@ export default function Three() {
               {lastLetter}
             </div>
           </div>
+        </div>
+        <div className="flex justify-center">
+          <button
+            onClick={handleResetClick}
+            className="bg-blood text-bone text-xl py-2 px-6 rounded-xl"
+          >
+            Reset
+          </button>
         </div>
       </main>
     </>

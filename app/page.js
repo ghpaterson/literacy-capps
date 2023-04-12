@@ -5,7 +5,7 @@ import welcome from "../public/welcome1.svg";
 export default function Home() {
   return (
     <main>
-      <div className="py-20">
+      <div className="py-40">
         <div className="flex justify-center py-6 px-4">
           <Image src={welcome} width={700} />
         </div>
