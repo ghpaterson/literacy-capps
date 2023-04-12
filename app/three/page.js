@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+import letsSpell from "../../public/letsspell.svg";
 
 export default function Three() {
   const [vowel, setVowel] = useState(null);
@@ -67,23 +69,23 @@ export default function Three() {
       <main>
         <div className="my-32">
           <div className="flex justify-center">
-            <h1 className="text-2xl lg:text-5xl">Let's Spell a Word</h1>
+            <Image src={letsSpell} width={400} />
           </div>
-          <div className="flex justify-center gap-4 lg:gap-14 my-10 px-2">
+          <div className="flex justify-center gap-4 lg:gap-14 my-10 px-2 hover:border-blood">
             <div
-              className=" flex justify-center items-center h-40 w-40 lg:h-60 lg:w-60 bg-gray-100 text-gray-900 text-6xl hover:cursor-pointer"
+              className=" flex justify-center items-center h-40 w-40 lg:h-60 lg:w-60 bg-gray-100 text-gray-900 text-6xl hover:cursor-pointer hover:border-blood"
               onClick={handleFirstBoxClick}
             >
               {firstLetter}
             </div>
             <div
-              className=" flex justify-center items-center h-40 w-40 lg:h-60 lg:w-60 bg-gray-100 text-red-500 text-6xl hover:cursor-pointer"
+              className=" flex justify-center items-center h-40 w-40 lg:h-60 lg:w-60 bg-gray-100 text-blood text-6xl hover:cursor-pointer hover:border-blood"
               onClick={handleVowelClick}
             >
               {vowel}
             </div>
             <div
-              className=" flex justify-center items-center h-40 w-40  lg:h-60 lg:w-60 bg-gray-100 text-gray-900 text-6xl hover:cursor-pointer"
+              className=" flex justify-center items-center h-40 w-40  lg:h-60 lg:w-60 bg-gray-100 text-gray-900 text-6xl hover:cursor-pointer hover:border-blood"
               onClick={handleLastBoxClick}
             >
               {lastLetter}

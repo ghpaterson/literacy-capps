@@ -1,5 +1,8 @@
+"use client";
+
 import "./globals.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export const metadata = {
   title: "Literacy Capps",
@@ -7,17 +10,21 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const router = useRouter();
+
   return (
     <html lang="en">
       <body>
-        <nav className="flex justify-between mx-10 my-10">
-          <Link href="/">Literacy Capps</Link>
-          <ul>
-            <li>
-              <Link href="/three">Three</Link>
-            </li>
-          </ul>
-        </nav>
+        {router.pathname !== "/" && (
+          <nav className="flex justify-between mx-10 my-10">
+            <Link href="/">Literacy Capps</Link>
+            <ul>
+              <li>
+                <Link href="/three">Three</Link>
+              </li>
+            </ul>
+          </nav>
+        )}
         {children}
       </body>
     </html>
