@@ -61,7 +61,12 @@ export default function Three() {
   };
 
   const handleLastBoxClick = () => {
-    const newLastLetter = lastBox[Math.floor(Math.random() * lastBox.length)];
+    let newLastBox = lastBox;
+    if (firstLetter === "f" && vowel === "u") {
+      newLastBox = lastBox.filter((letter) => letter !== "ck");
+    }
+    const newLastLetter =
+      newLastBox[Math.floor(Math.random() * newLastBox.length)];
     setLastLetter(newLastLetter);
   };
 
