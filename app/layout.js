@@ -12,6 +12,11 @@ export default function RootLayout({ children }) {
       <body>
         <nav className="flex justify-between mx-10 my-10">
           <Link href="/">Literacy Capps</Link>
+          <ul>
+            <li>
+              <Link href="/three">Three</Link>
+            </li>
+          </ul>
         </nav>
         {children}
       </body>
