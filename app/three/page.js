@@ -6,10 +6,10 @@ import letsSpell from "../../public/letsspell.svg";
 import NavBar from "../../components/navbar.js";
 
 export default function Three() {
-  const [vowel, setVowel] = useState(null);
+  const [vowel, setVowel] = useState("click");
   const vowels = ["a", "e", "i", "o", "u"];
 
-  const [firstLetter, setFirstLetter] = useState(null);
+  const [firstLetter, setFirstLetter] = useState("click");
   const firstBox = [
     "b",
     "c",
@@ -32,7 +32,7 @@ export default function Three() {
     "z",
   ];
 
-  const [lastLetter, setLastLetter] = useState(null);
+  const [lastLetter, setLastLetter] = useState("click");
   const lastBox = [
     "b",
     "ck",
@@ -66,9 +66,9 @@ export default function Three() {
   };
 
   const handleResetClick = () => {
-    setVowel(null);
-    setFirstLetter(null);
-    setLastLetter(null);
+    setVowel("click");
+    setFirstLetter("click");
+    setLastLetter("click");
   };
 
   return (
