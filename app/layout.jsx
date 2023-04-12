@@ -1,4 +1,5 @@
 import './globals.css'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'Literacy Capps',
@@ -10,10 +11,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <nav className='flex justify-between mx-10 my-10'>
-          <h1>Literacy Capps</h1>
+          <Link href="/">Literacy Capps</Link>
           <ul>
             <li>
-              <a href='#'>Three</a>
+              <Link href="/three">Three</Link>
             </li>
             <li></li>
           </ul>
