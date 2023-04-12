@@ -29,6 +29,23 @@ export default function Three() {
     "z",
   ];
 
+  const [lastLetter, setLastLetter] = useState(null);
+  const lastBox = [
+    "b",
+    "ck",
+    "d",
+    "ff",
+    "g",
+    "ll",
+    "m",
+    "n",
+    "p",
+    "ss",
+    "t",
+    "x",
+    "zz",
+  ];
+
   const handleVowelClick = () => {
     const newVowel = vowels[Math.floor(Math.random() * vowels.length)];
     setVowel(newVowel);
@@ -40,28 +57,38 @@ export default function Three() {
     setFirstLetter(newFirstLetter);
   };
 
+  const handleLastBoxClick = () => {
+    const newLastLetter = lastBox[Math.floor(Math.random() * lastBox.length)];
+    setLastLetter(newLastLetter);
+  };
+
   return (
     <>
       <main>
-        <div className="flex justify-center">
-          <h1 className="text-2xl lg:text-5xl">
-            Let's Spell a Three Letter Word
-          </h1>
-        </div>
-        <div className="flex justify-center gap-14 my-10">
-          <div
-            className=" flex justify-center items-center h-60 w-60 bg-gray-100 text-gray-900 text-6xl"
-            onClick={handleFirstBoxClick}
-          >
-            {firstLetter}
+        <div className="my-32">
+          <div className="flex justify-center">
+            <h1 className="text-2xl lg:text-5xl">Let's Spell a Word</h1>
           </div>
-          <div
-            className=" flex justify-center items-center h-60 w-60 bg-gray-100 text-red-500 text-6xl"
-            onClick={handleVowelClick}
-          >
-            {vowel}
+          <div className="flex justify-center gap-4 lg:gap-14 my-10 px-2">
+            <div
+              className=" flex justify-center items-center h-40 w-40 lg:h-60 lg:w-60 bg-gray-100 text-gray-900 text-6xl hover:cursor-pointer"
+              onClick={handleFirstBoxClick}
+            >
+              {firstLetter}
+            </div>
+            <div
+              className=" flex justify-center items-center h-40 w-40 lg:h-60 lg:w-60 bg-gray-100 text-red-500 text-6xl hover:cursor-pointer"
+              onClick={handleVowelClick}
+            >
+              {vowel}
+            </div>
+            <div
+              className=" flex justify-center items-center h-40 w-40  lg:h-60 lg:w-60 bg-gray-100 text-gray-900 text-6xl hover:cursor-pointer"
+              onClick={handleLastBoxClick}
+            >
+              {lastLetter}
+            </div>
           </div>
-          <div className="h-60 w-60 bg-gray-100"></div>
         </div>
       </main>
     </>
