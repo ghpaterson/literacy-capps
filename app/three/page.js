@@ -68,6 +68,9 @@ export default function Three() {
     if (firstLetter === "c" && vowel === "o") {
       newLastBox = lastBox.filter((letter) => letter !== "ck");
     }
+    if (firstLetter === "w" && vowel === "o") {
+      newLastBox = lastBox.filter((letter) => letter !== "g");
+    }
     const newLastLetter =
       newLastBox[Math.floor(Math.random() * newLastBox.length)];
     setLastLetter(newLastLetter);

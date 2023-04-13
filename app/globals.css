@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "inconstant";
+  src: url("/fonts/InconstantVF.ttf") format("truetype");
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,5 +23,5 @@
 }
 
 body {
- background-color: #FFD166;
+ background-color: #FFFFFF;
 }
