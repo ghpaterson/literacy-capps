@@ -6,14 +6,14 @@ import heroTitle from "../public/herotitle.svg";
 export default function Home() {
   return (
     <main>
-      <div className="flex justify-center items-center my-24">
+      <div className="flex flex-col justify-center items-center my-24 lg:flex-row">
         <div className="flex justify-center py-6 px-4">
           <Image src={heroImage} width={550} />
         </div>
-        <div className="flex flex-col justify-center gap-12 py-6">
+        <div className="flex flex-col justify-center gap-12 py-6 px-10">
           <Image src={heroTitle} width={500} />
           <Link href="/three">
-            <button className="bg-verdigris text-2xl rounded-xl px-2 py-2 text-bone">
+            <button className="bg-verdigris text-2xl font-inconstant rounded-xl px-2 pt-3 pb-2 text-bone">
               Get Started
             </button>
           </Link>

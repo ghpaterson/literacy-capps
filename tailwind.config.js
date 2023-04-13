@@ -14,6 +14,7 @@ module.exports = {
         bone: "#FAFAF5",
         bittersweet: "#EF5B5B",
         verdigris: "#48B2B3",
+        tiffany: "#B5DFD0",
       },
       fontFamily: {
         inconstant: "inconstant",
