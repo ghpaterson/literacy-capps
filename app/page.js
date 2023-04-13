@@ -13,7 +13,7 @@ export default function Home() {
         <div className="flex flex-col justify-center gap-12 py-6 px-10">
           <Image src={heroTitle} width={500} />
           <Link href="/three">
-            <button className="bg-verdigris text-2xl font-inconstant rounded-xl px-2 pt-3 pb-2 text-bone">
+            <button className="bg-bittersweet text-2xl font-inconstant rounded-xl px-2 pt-3 pb-2 text-bone">
               Get Started
             </button>
           </Link>
