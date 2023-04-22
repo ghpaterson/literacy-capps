@@ -14,7 +14,7 @@ export default function NavBar() {
     <>
       <nav className=" bg-white my-8 pb-6 text-2xl font-inconstant">
         <div className="flex justify-between mx-10">
-          <Link href="/">Home</Link>
+          <div className="text-bittersweet text-4xl">Decode Care</div>
           {path !== "/Menu" && (
             <ul>
               <li>
