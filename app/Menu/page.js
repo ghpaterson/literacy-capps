@@ -6,13 +6,27 @@ export default function Menu() {
     <>
       <main className=" bg-tiffany h-screen">
         <NavBar />
-        <div className="flex flex-col gap-10 px-6 text-xl">
-          <Link href="/CVC">Page 1</Link>
-          <Link href="/CCVCa">Page 2a</Link>
-          <Link href="#">Page 2b</Link>
-          <Link href="#">Page 3</Link>
-          <Link href="#">Page 4</Link>
-          <Link href="#">Page 5</Link>
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto text-xl">
+            <div className="bg-transparent rounded-xl shadow-lg py-6 px-6">
+              <Link href="/CVC">Exercise 1</Link>
+            </div>
+            <div className="bg-transparent rounded-xl shadow-lg py-6 px-6">
+              <Link href="/CCVCa">Exercise 2a</Link>
+            </div>
+            <div className="bg-transparent rounded-xl shadow-lg py-6 px-6">
+              <Link href="/CCVCb">Exercise 2b</Link>
+            </div>
+            <div className="bg-transparent rounded-xl shadow-lg py-6 px-6">
+              <Link href="/CVCC">Exercise 3</Link>
+            </div>
+            <div className="bg-transparent rounded-xl shadow-lg py-6 px-6">
+              <Link href="/CCVCC">Exercise 4</Link>
+            </div>
+            <div className="bg-transparent rounded-xl shadow-lg py-6 px-6">
+              <Link href="/CCCVCCC">Exercise 5</Link>
+            </div>
+          </div>
         </div>
       </main>
     </>

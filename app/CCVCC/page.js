@@ -3,7 +3,7 @@
 import { useState } from "react";
 import NavBar from "../../components/navbar.js";
 
-export default function CCVCA() {
+export default function CCVCC() {
   const [vowel, setVowel] = useState("click");
   const vowels = ["a", "e", "i", "o", "u"];
 
@@ -18,12 +18,17 @@ export default function CCVCA() {
     "dw",
     "fl",
     "fr",
+    "gh",
     "gl",
+    "gn",
     "gr",
+    "kn",
     "ph",
     "pl",
     "pr",
+    "ps",
     "qu",
+    "rh",
     "sc",
     "sh",
     "sk",
@@ -36,23 +41,31 @@ export default function CCVCA() {
     "th",
     "tr",
     "tw",
+    "wh",
+    "wr",
   ];
 
   const [lastLetter, setLastLetter] = useState("click");
   const lastBox = [
-    "b",
+    "ch",
     "ck",
-    "d",
-    "ff",
-    "g",
-    "ll",
-    "m",
-    "n",
-    "p",
-    "ss",
-    "t",
-    "x",
-    "zz",
+    "ct",
+    "ft",
+    "ld",
+    "lk",
+    "lp",
+    "lt",
+    "mb",
+    "mp",
+    "nd",
+    "ng",
+    "nk",
+    "nt",
+    "pt",
+    "sh",
+    "sp",
+    "st",
+    "th",
   ];
 
   const handleVowelClick = () => {
@@ -67,24 +80,7 @@ export default function CCVCA() {
   };
 
   const handleLastBoxClick = () => {
-    let newLastBox = lastBox;
-    if (firstLetter === "f" && vowel === "u") {
-      newLastBox = lastBox.filter((letter) => letter !== "ck");
-    }
-    if (firstLetter === "c" && vowel === "o") {
-      newLastBox = lastBox.filter((letter) => letter !== "ck");
-    }
-    if (firstLetter === "w" && vowel === "o") {
-      newLastBox = lastBox.filter((letter) => letter !== "g");
-    }
-    if (firstLetter === "s" && vowel === "e") {
-      newLastBox = lastBox.filter((letter) => letter !== "x");
-    }
-    if (firstLetter === "d" && vowel === "i") {
-      newLastBox = lastBox.filter((letter) => letter !== "ck");
-    }
-    const newLastLetter =
-      newLastBox[Math.floor(Math.random() * newLastBox.length)];
+    const newLastLetter = lastBox[Math.floor(Math.random() * lastBox.length)];
     setLastLetter(newLastLetter);
   };
 

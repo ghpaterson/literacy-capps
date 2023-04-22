@@ -93,7 +93,7 @@ export default function CVC() {
         <div className="mt-20">
           <div className="flex justify-center">
             <h1 className="font-inconstant text-5xl lg:text-6xl text-bittersweet">
-              Let's Spell a Word
+              Let's Read
             </h1>
             {/* <Image src={letsSpell} width={400} /> */}
           </div>

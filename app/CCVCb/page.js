@@ -3,40 +3,12 @@
 import { useState } from "react";
 import NavBar from "../../components/navbar.js";
 
-export default function CCVCA() {
+export default function CCVCB() {
   const [vowel, setVowel] = useState("click");
   const vowels = ["a", "e", "i", "o", "u"];
 
   const [firstLetter, setFirstLetter] = useState("click");
-  const firstBox = [
-    "bl",
-    "br",
-    "ch",
-    "cl",
-    "cr",
-    "dr",
-    "dw",
-    "fl",
-    "fr",
-    "gl",
-    "gr",
-    "ph",
-    "pl",
-    "pr",
-    "qu",
-    "sc",
-    "sh",
-    "sk",
-    "sl",
-    "sm",
-    "sn",
-    "sp",
-    "st",
-    "sw",
-    "th",
-    "tr",
-    "tw",
-  ];
+  const firstBox = ["gh", "gn", "kn", "ps", "rh", "wh", "wr"];
 
   const [lastLetter, setLastLetter] = useState("click");
   const lastBox = [

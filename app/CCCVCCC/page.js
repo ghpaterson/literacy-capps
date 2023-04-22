@@ -3,57 +3,25 @@
 import { useState } from "react";
 import NavBar from "../../components/navbar.js";
 
-export default function CCVCA() {
+export default function CCCVCCC() {
   const [vowel, setVowel] = useState("click");
   const vowels = ["a", "e", "i", "o", "u"];
 
   const [firstLetter, setFirstLetter] = useState("click");
   const firstBox = [
-    "bl",
-    "br",
-    "ch",
-    "cl",
-    "cr",
-    "dr",
-    "dw",
-    "fl",
-    "fr",
-    "gl",
-    "gr",
-    "ph",
-    "pl",
-    "pr",
-    "qu",
-    "sc",
-    "sh",
-    "sk",
-    "sl",
-    "sm",
-    "sn",
-    "sp",
-    "st",
-    "sw",
-    "th",
-    "tr",
-    "tw",
+    "chr",
+    "sch",
+    "scr",
+    "shr",
+    "spl",
+    "spr",
+    "squ",
+    "str",
+    "thr",
   ];
 
   const [lastLetter, setLastLetter] = useState("click");
-  const lastBox = [
-    "b",
-    "ck",
-    "d",
-    "ff",
-    "g",
-    "ll",
-    "m",
-    "n",
-    "p",
-    "ss",
-    "t",
-    "x",
-    "zz",
-  ];
+  const lastBox = ["dge", "tch", "ght", "nch"];
 
   const handleVowelClick = () => {
     const newVowel = vowels[Math.floor(Math.random() * vowels.length)];
@@ -67,24 +35,7 @@ export default function CCVCA() {
   };
 
   const handleLastBoxClick = () => {
-    let newLastBox = lastBox;
-    if (firstLetter === "f" && vowel === "u") {
-      newLastBox = lastBox.filter((letter) => letter !== "ck");
-    }
-    if (firstLetter === "c" && vowel === "o") {
-      newLastBox = lastBox.filter((letter) => letter !== "ck");
-    }
-    if (firstLetter === "w" && vowel === "o") {
-      newLastBox = lastBox.filter((letter) => letter !== "g");
-    }
-    if (firstLetter === "s" && vowel === "e") {
-      newLastBox = lastBox.filter((letter) => letter !== "x");
-    }
-    if (firstLetter === "d" && vowel === "i") {
-      newLastBox = lastBox.filter((letter) => letter !== "ck");
-    }
-    const newLastLetter =
-      newLastBox[Math.floor(Math.random() * newLastBox.length)];
+    const newLastLetter = lastBox[Math.floor(Math.random() * lastBox.length)];
     setLastLetter(newLastLetter);
   };
 
