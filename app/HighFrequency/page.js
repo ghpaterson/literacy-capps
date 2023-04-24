@@ -1,6 +1,8 @@
 "use client";
 
 import NavBar from "@/components/navbar";
+import WordDisplay from "@/components/wordDisplay";
+import CycleControl from "@/components/cycleControl";
 import { useState, useRef } from "react";
 
 export default function HighFrequency() {
@@ -32,47 +34,13 @@ export default function HighFrequency() {
           </h1>
         </div>
         <div className="flex justify-center gap-4 lg:gap-14 my-10 px-2 font-comic">
-          <div className=" flex justify-center items-center rounded-xl h-40 w-40 lg:h-60 lg:w-60 bg-gray-100 text-gray-900 text-6xl hover:cursor-pointer">
-            {highFrequencyWord}
-          </div>
+          <WordDisplay highFrequencyWord={highFrequencyWord} />
         </div>
-      </div>
-      <div className="flex justify-center gap-4 ">
-        <button
-          onClick={() => {
-            stopCycle();
-            startCycle(3000);
-          }}
-          className="bg-bittersweet font-inconstant text-bone text-xl py-2 px-6 rounded-xl"
-        >
-          Slow
-        </button>
-        <button
-          onClick={() => {
-            stopCycle();
-            startCycle(2000);
-          }}
-          className="bg-bittersweet font-inconstant text-bone text-xl py-2 px-6 rounded-xl"
-        >
-          Medium
-        </button>
-        <button
-          onClick={() => {
-            stopCycle();
-            startCycle(1000);
-          }}
-          className="bg-bittersweet font-inconstant text-bone text-xl py-2 px-6 rounded-xl"
-        >
-          Fast
-        </button>
-        <button
-          onClick={() => {
-            stopCycle();
-          }}
-          className="bg-bittersweet font-inconstant text-bone text-xl py-2 px-6 rounded-xl"
-        >
-          Stop
-        </button>
+        <CycleControl
+          startCycle={startCycle}
+          stopCycle={stopCycle}
+          highFrequencyWord={highFrequencyWord}
+        />
       </div>
     </main>
   );
