@@ -95,7 +95,6 @@ export default function CVC() {
             <h1 className="font-inconstant text-5xl lg:text-6xl text-bittersweet">
               Let's Read
             </h1>
-            {/* <Image src={letsSpell} width={400} /> */}
           </div>
           <div className="flex justify-center gap-4 lg:gap-14 my-10 px-2 font-comic">
             <div
