@@ -42,7 +42,7 @@ export default function Menu() {
 
   return (
     <>
-      <main className="bg-tiffany h-screen">
+      <main>
         <NavBar />
         <div className="flex justify-center py-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto text-xl">
