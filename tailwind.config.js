@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         inconstant: "inconstant",
+        comic: ["Comic Neue", "cursive"],
       },
     },
   },

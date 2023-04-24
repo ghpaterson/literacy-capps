@@ -33,6 +33,11 @@ export default function Menu() {
       title: "Exercise 5",
       description: "Read a Seven Letter Word",
     },
+    {
+      href: "/HighFrequency",
+      title: "Exercise 6",
+      description: "High Frequency Words",
+    },
   ];
 
   return (
