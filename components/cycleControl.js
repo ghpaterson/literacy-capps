@@ -9,7 +9,7 @@ export default function CycleControl({ stopCycle, startCycle }) {
             stopCycle();
             startCycle(1500);
           }}
-          className="bg-green-600 font-inconstant text-bone text-xl py-2 px-6 rounded-xl"
+          className="bg-green-600 font-comic text-bone text-xl py-2 px-6 rounded-xl"
         >
           Slow
         </button>
@@ -18,7 +18,7 @@ export default function CycleControl({ stopCycle, startCycle }) {
             stopCycle();
             startCycle(1000);
           }}
-          className="bg-yellow-600 font-inconstant text-bone text-xl py-2 px-6 rounded-xl"
+          className="bg-yellow-600 font-comic text-bone text-xl py-2 px-6 rounded-xl"
         >
           Medium
         </button>
@@ -27,7 +27,7 @@ export default function CycleControl({ stopCycle, startCycle }) {
             stopCycle();
             startCycle(500);
           }}
-          className="bg-bittersweet font-inconstant text-bone text-xl py-2 px-6 rounded-xl"
+          className="bg-bittersweet font-comic text-bone text-xl py-2 px-6 rounded-xl"
         >
           Fast
         </button>
@@ -37,7 +37,7 @@ export default function CycleControl({ stopCycle, startCycle }) {
           onClick={() => {
             stopCycle();
           }}
-          className="bg-bittersweet font-inconstant text-bone text-4xl py-2 px-6 rounded-xl"
+          className="bg-bittersweet font-comic text-bone text-4xl py-2 px-6 rounded-xl"
         >
           Stop
         </button>
