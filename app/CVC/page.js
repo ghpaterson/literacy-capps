@@ -96,7 +96,7 @@ export default function CVC() {
               Let's Read
             </h1>
           </div>
-          <div className="flex justify-center gap-4 lg:gap-14 my-10 px-2 font-comic">
+          <div className="flex justify-center gap-4 lg:gap-14 my-10 px-6 font-comic">
             <div
               className=" flex justify-center items-center rounded-xl h-40 w-40 lg:h-60 lg:w-60 bg-gray-100 text-gray-900 text-6xl hover:cursor-pointer"
               onClick={handleFirstBoxClick}

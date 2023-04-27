@@ -106,7 +106,7 @@ export default function Menu() {
           </div>
         </div>
         <div className="my-10">
-          <div className="flex justify-center text-3xl md:text-5xl font-comic">
+          <div className="flex justify-center text-3xl md:text-5xl font-comic mb-10">
             <h2>High Frequency Words</h2>
           </div>
           <div className="flex justify-center py-10">
