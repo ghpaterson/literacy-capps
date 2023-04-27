@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ExerciseCard({ href, title, description }) {
+export default function CvcExerciseCard({ href, title, description }) {
   return (
     <Link href={href}>
       <div className="bg-bittersweet rounded-xl shadow-lg py-6 px-6 cursor-pointer">

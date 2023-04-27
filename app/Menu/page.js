@@ -1,8 +1,9 @@
 import NavBar from "@/components/navbar";
-import ExerciseCard from "@/components/exerciseCard";
+import CvcExerciseCard from "@/components/cvcExerciseCard";
+import HighFreqExerciseCard from "@/components/highFreqExerciseCard";
 
 export default function Menu() {
-  const exercises = [
+  const cvcExercises = [
     {
       href: "/CVC",
       title: "Exercise 1",
@@ -33,9 +34,22 @@ export default function Menu() {
       title: "Exercise 5",
       description: "Read a Seven Letter Word",
     },
+  ];
+
+  const highFreqExercises = [
     {
-      href: "/HighFrequency",
-      title: "Exercise 6",
+      href: "/HighFrequencyOne",
+      title: "Exercise 1",
+      description: "High Frequency Words",
+    },
+    {
+      href: "/HighFrequencyTwo",
+      title: "Exercise 2",
+      description: "High Frequency Words",
+    },
+    {
+      href: "/HighFrequencyThree",
+      title: "Exercise 3",
       description: "High Frequency Words",
     },
   ];
@@ -44,10 +58,28 @@ export default function Menu() {
     <>
       <main>
         <NavBar />
+        <div className="flex justify-center text-3xl font-comic">
+          <h2>CVC Exercises</h2>
+        </div>
         <div className="flex justify-center py-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto text-xl">
-            {exercises.map((exercise) => (
-              <ExerciseCard
+            {cvcExercises.map((exercise) => (
+              <CvcExerciseCard
+                key={exercise.href}
+                href={exercise.href}
+                title={exercise.title}
+                description={exercise.description}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="flex justify-center text-3xl font-comic">
+          <h2>High Frequency Words</h2>
+        </div>
+        <div className="flex justify-center py-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto text-xl">
+            {highFreqExercises.map((exercise) => (
+              <HighFreqExerciseCard
                 key={exercise.href}
                 href={exercise.href}
                 title={exercise.title}

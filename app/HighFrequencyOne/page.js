@@ -4,19 +4,19 @@ import NavBar from "@/components/navbar";
 import WordDisplay from "@/components/wordDisplay";
 import CycleControl from "@/components/cycleControl";
 import { useState, useRef } from "react";
+import { hfwArrayOne } from "./hfwArrayOne";
 
-export default function HighFrequency() {
+export default function HighFrequencyOne() {
   const [highFrequencyWord, setHighFrequencyWord] = useState("");
-  const highFrequencyWords = ["hello", "darkness", "my", "old", "friend"];
+  const highFrequencyWords = hfwArrayOne;
   const intervalId = useRef(null);
 
   function startCycle(intervalTime) {
-    let index = 0;
+    let index = Math.floor(Math.random() * highFrequencyWords.length);
     setHighFrequencyWord(highFrequencyWords[index]);
-    index++;
     intervalId.current = setInterval(() => {
+      index = Math.floor(Math.random() * highFrequencyWords.length);
       setHighFrequencyWord(highFrequencyWords[index]);
-      index = (index + 1) % highFrequencyWords.length;
     }, intervalTime);
   }
 
@@ -29,7 +29,7 @@ export default function HighFrequency() {
       <NavBar />
       <div className="mt-20">
         <div className="flex justify-center">
-          <h1 className="font-inconstant text-5xl lg:text-6xl text-bittersweet">
+          <h1 className="font-comic text-5xl lg:text-6xl text-bittersweet">
             Let's Read
           </h1>
         </div>
