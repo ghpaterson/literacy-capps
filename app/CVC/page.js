@@ -4,10 +4,10 @@ import { useState } from "react";
 import NavBar from "../../components/navbar.js";
 
 export default function CVC() {
-  const [vowel, setVowel] = useState("click");
+  const [vowel, setVowel] = useState("?");
   const vowels = ["a", "e", "i", "o", "u"];
 
-  const [firstLetter, setFirstLetter] = useState("click");
+  const [firstLetter, setFirstLetter] = useState("?");
   const firstBox = [
     "b",
     "c",
@@ -30,7 +30,7 @@ export default function CVC() {
     "z",
   ];
 
-  const [lastLetter, setLastLetter] = useState("click");
+  const [lastLetter, setLastLetter] = useState("?");
   const lastBox = [
     "b",
     "ck",
@@ -81,9 +81,9 @@ export default function CVC() {
   };
 
   const handleResetClick = () => {
-    setVowel("click");
-    setFirstLetter("click");
-    setLastLetter("click");
+    setVowel("?");
+    setFirstLetter("?");
+    setLastLetter("?");
   };
 
   return (
