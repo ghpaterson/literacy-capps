@@ -57,6 +57,11 @@ export default function Menu() {
       title: "Exercise 4",
       description: "High Frequency Words",
     },
+    {
+      href: "/HighFrequencyFive",
+      title: "Exercise 5",
+      description: "High Frequency Words",
+    },
   ];
 
   return (
