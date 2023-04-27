@@ -58,34 +58,38 @@ export default function Menu() {
     <>
       <main>
         <NavBar />
-        <div className="flex justify-center text-3xl font-comic">
-          <h2>CVC Exercises</h2>
-        </div>
-        <div className="flex justify-center py-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto text-xl">
-            {cvcExercises.map((exercise) => (
-              <CvcExerciseCard
-                key={exercise.href}
-                href={exercise.href}
-                title={exercise.title}
-                description={exercise.description}
-              />
-            ))}
+        <div>
+          <div className="flex justify-center text-3xl md:text-5xl font-comic">
+            <h2>Click to Spell</h2>
+          </div>
+          <div className="flex justify-center py-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto text-xl">
+              {cvcExercises.map((exercise) => (
+                <CvcExerciseCard
+                  key={exercise.href}
+                  href={exercise.href}
+                  title={exercise.title}
+                  description={exercise.description}
+                />
+              ))}
+            </div>
           </div>
         </div>
-        <div className="flex justify-center text-3xl font-comic">
-          <h2>High Frequency Words</h2>
-        </div>
-        <div className="flex justify-center py-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto text-xl">
-            {highFreqExercises.map((exercise) => (
-              <HighFreqExerciseCard
-                key={exercise.href}
-                href={exercise.href}
-                title={exercise.title}
-                description={exercise.description}
-              />
-            ))}
+        <div className="my-10">
+          <div className="flex justify-center text-3xl md:text-5xl font-comic">
+            <h2>High Frequency Words</h2>
+          </div>
+          <div className="flex justify-center py-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto text-xl">
+              {highFreqExercises.map((exercise) => (
+                <HighFreqExerciseCard
+                  key={exercise.href}
+                  href={exercise.href}
+                  title={exercise.title}
+                  description={exercise.description}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </main>

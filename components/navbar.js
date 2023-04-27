@@ -12,7 +12,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className=" bg-white my-8 pb-6 text-2xl font-inconstant">
+      <nav className=" bg-white my-8 pb-6 text-2xl font-comic">
         <div className="flex justify-between mx-10">
           <div className="text-bittersweet text-4xl">Decode Care</div>
           {path !== "/Menu" && (
