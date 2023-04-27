@@ -4,11 +4,11 @@ import NavBar from "@/components/navbar";
 import WordDisplay from "@/components/wordDisplay";
 import CycleControl from "@/components/cycleControl";
 import { useState, useRef } from "react";
-import { hfwArrayFive } from "./hfwArrayFive";
+import { hfwArraySeven } from "./hfwArraySeven";
 
-export default function HighFrequencyFive() {
+export default function HighFrequencySix() {
   const [highFrequencyWord, setHighFrequencyWord] = useState("");
-  const highFrequencyWords = hfwArrayFive;
+  const highFrequencyWords = hfwArraySeven;
   const intervalId = useRef(null);
 
   function startCycle(intervalTime) {

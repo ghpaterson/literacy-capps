@@ -62,6 +62,26 @@ export default function Menu() {
       title: "Exercise 5",
       description: "High Frequency Words",
     },
+    {
+      href: "/HighFrequencySix",
+      title: "Exercise 6",
+      description: "High Frequency Words",
+    },
+    {
+      href: "/HighFrequencySeven",
+      title: "Exercise 7",
+      description: "High Frequency Words",
+    },
+    {
+      href: "/HighFrequencyEight",
+      title: "Exercise 8",
+      description: "High Frequency Words",
+    },
+    {
+      href: "/HighFrequencyNine",
+      title: "Exercise 9",
+      description: "High Frequency Words",
+    },
   ];
 
   return (
