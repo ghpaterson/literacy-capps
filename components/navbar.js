@@ -12,13 +12,15 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className=" bg-white my-8 pb-6 text-2xl font-comic">
+      <nav className=" bg-bittersweet py-8 text-2xl font-comic">
         <div className="flex justify-between mx-10">
-          <div className="text-bittersweet text-4xl">Decode Care</div>
+          <div className="text-white text-4xl">Decode Care</div>
           {path !== "/Menu" && (
             <ul>
               <li>
-                <Link href="/Menu">Menu</Link>
+                <Link className="text-white" href="/Menu">
+                  Menu
+                </Link>
               </li>
             </ul>
           )}

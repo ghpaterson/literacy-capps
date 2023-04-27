@@ -59,7 +59,7 @@ export default function Menu() {
       <main>
         <NavBar />
         <div>
-          <div className="flex justify-center text-3xl md:text-5xl font-comic">
+          <div className="flex justify-center text-3xl md:text-5xl font-comic my-10">
             <h2>Click to Spell</h2>
           </div>
           <div className="flex justify-center py-10">
