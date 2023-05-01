@@ -30,7 +30,7 @@ export const hfwArrayNine = [
   "under",
   "ground",
   "groups",
-  "kivked",
+  "kicked",
   "locked",
   "sister",
   "listen",

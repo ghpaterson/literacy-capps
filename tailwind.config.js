@@ -15,10 +15,13 @@ module.exports = {
         bittersweet: "#EF5B5B",
         verdigris: "#48B2B3",
         tiffany: "#B5DFD0",
+        buff: "#FFFAE3",
+        darkbuff: "#FFF0AD",
       },
       fontFamily: {
         inconstant: "inconstant",
         comic: ["Comic Neue", "cursive"],
+        gothic: ["Gothic A1", "sans-serif"],
       },
     },
   },

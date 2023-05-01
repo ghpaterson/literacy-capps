@@ -7,32 +7,32 @@ export default function Menu() {
     {
       href: "/CVC",
       title: "Exercise 1",
-      description: "Read a Three Letter Word",
+      description: "CVC/C Words",
     },
     {
       href: "/CCVCa",
       title: "Exercise 2a",
-      description: "Read a Four Letter Word",
+      description: "CCVC/C Words",
     },
     {
       href: "/CCVCb",
       title: "Exercise 2b",
-      description: "Read a Four Letter Word",
+      description: "CCVC/C Words with silent letters",
     },
     {
       href: "/CVCC",
       title: "Exercise 3",
-      description: "Read a Four Letter Word",
+      description: "CVCC Words",
     },
     {
       href: "/CCVCC",
       title: "Exercise 4",
-      description: "Read a Five Letter Word",
+      description: "CCVCC Words",
     },
     {
       href: "/CCCVCCC",
       title: "Exercise 5",
-      description: "Read a Seven Letter Word",
+      description: "CCCVCCC Words",
     },
   ];
 
@@ -40,7 +40,7 @@ export default function Menu() {
     {
       href: "/HighFrequencyOne",
       title: "Exercise 1",
-      description: "High Frequency Words",
+      description: "Part 1.1",
     },
     {
       href: "/HighFrequencyTwo",
@@ -60,7 +60,7 @@ export default function Menu() {
     {
       href: "/HighFrequencyFive",
       title: "Exercise 5",
-      description: "High Frequency Words",
+      description: "Part 2.2",
     },
     {
       href: "/HighFrequencySix",
@@ -80,7 +80,7 @@ export default function Menu() {
     {
       href: "/HighFrequencyNine",
       title: "Exercise 9",
-      description: "High Frequency Words",
+      description: "Part 3.3",
     },
   ];
 
@@ -89,8 +89,8 @@ export default function Menu() {
       <main>
         <NavBar />
         <div>
-          <div className="flex justify-center text-3xl md:text-5xl font-comic my-10">
-            <h2>Click to Spell</h2>
+          <div className="flex justify-center text-2xl md:text-5xl font-comic my-10">
+            <h2>Click to Read Real and Nonsense Words</h2>
           </div>
           <div className="flex justify-center py-10">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto text-xl">
@@ -106,7 +106,7 @@ export default function Menu() {
           </div>
         </div>
         <div className="my-10">
-          <div className="flex justify-center text-3xl md:text-5xl font-comic mb-10">
+          <div className="flex justify-center text-2xl md:text-5xl font-comic mb-10">
             <h2>High Frequency Words</h2>
           </div>
           <div className="flex justify-center py-10">

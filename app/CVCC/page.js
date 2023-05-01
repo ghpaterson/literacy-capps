@@ -101,23 +101,22 @@ export default function CVCC() {
             <h1 className="font-comic text-5xl lg:text-6xl text-bittersweet">
               Let's Read
             </h1>
-            {/* <Image src={letsSpell} width={400} /> */}
           </div>
           <div className="flex justify-center gap-4 lg:gap-14 my-10 px-6 font-comic">
             <div
-              className=" flex justify-center items-center rounded-xl h-40 w-40 lg:h-60 lg:w-60 bg-gray-100 text-gray-900 text-6xl hover:cursor-pointer hover:border-blood"
+              className=" flex justify-center items-center rounded-xl h-40 w-40 lg:h-60 lg:w-60 bg-darkbuff text-gray-900 text-6xl hover:cursor-pointer hover:border-blood"
               onClick={handleFirstBoxClick}
             >
               {firstLetter}
             </div>
             <div
-              className=" flex justify-center items-center rounded-xl h-40 w-40 lg:h-60 lg:w-60 bg-gray-100 text-bittersweet text-6xl hover:cursor-pointer hover:border-blood"
+              className=" flex justify-center items-center rounded-xl h-40 w-40 lg:h-60 lg:w-60 bg-darkbuff text-bittersweet text-6xl hover:cursor-pointer hover:border-blood"
               onClick={handleVowelClick}
             >
               {vowel}
             </div>
             <div
-              className=" flex justify-center items-center rounded-xl h-40 w-40  lg:h-60 lg:w-60 bg-gray-100 text-gray-900 text-6xl hover:cursor-pointer hover:border-blood"
+              className=" flex justify-center items-center rounded-xl h-40 w-40  lg:h-60 lg:w-60 bg-darkbuff text-gray-900 text-6xl hover:cursor-pointer hover:border-blood"
               onClick={handleLastBoxClick}
             >
               {lastLetter}
@@ -127,7 +126,7 @@ export default function CVCC() {
         <div className="flex justify-center">
           <button
             onClick={handleResetClick}
-            className="bg-bittersweet font-inconstant text-bone text-xl py-2 px-6 rounded-xl"
+            className="bg-bittersweet font-comic text-bone text-xl py-2 px-6 rounded-xl"
           >
             Reset
           </button>

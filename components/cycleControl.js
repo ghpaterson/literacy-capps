@@ -7,7 +7,7 @@ export default function CycleControl({ stopCycle, startCycle }) {
         <button
           onClick={() => {
             stopCycle();
-            startCycle(1500);
+            startCycle(1750);
           }}
           className="bg-green-600 font-comic text-bone text-xl py-2 px-6 rounded-xl"
         >
@@ -16,7 +16,7 @@ export default function CycleControl({ stopCycle, startCycle }) {
         <button
           onClick={() => {
             stopCycle();
-            startCycle(1000);
+            startCycle(1250);
           }}
           className="bg-yellow-600 font-comic text-bone text-xl py-2 px-6 rounded-xl"
         >
@@ -25,7 +25,7 @@ export default function CycleControl({ stopCycle, startCycle }) {
         <button
           onClick={() => {
             stopCycle();
-            startCycle(500);
+            startCycle(750);
           }}
           className="bg-bittersweet font-comic text-bone text-xl py-2 px-6 rounded-xl"
         >
